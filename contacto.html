@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,7 +12,7 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -38,19 +37,16 @@
 
 <section class="container">
 
-<h2 class="text-center mb-4">CONTACTO</h2>
+<h2 class="text-center">CONTACTO</h2>
 
 <p class="text-center">
 Si deseas comunicarte conmigo para obtener más información sobre mi perfil académico
-o profesional, puedes contactarme directamente o enviarme un mensaje mediante el
-siguiente formulario.
+o profesional, puedes contactarme directamente o enviarme un mensaje mediante el siguiente formulario.
 </p>
 
 <div class="row mt-4">
 
-<!-- INFORMACION -->
-
-<div class="col-md-4 text-center contacto-info">
+<div class="col-md-4 contacto-info">
 
 <h4>
 <i class="fa-solid fa-envelope correo"></i> Correo
@@ -73,36 +69,34 @@ siguiente formulario.
 </div>
 
 
-<!-- FORMULARIO -->
-
 <div class="col-md-8">
 
 <form id="formulario">
 
 <div class="mb-3">
 
-<label class="form-label">Nombre</label>
+<label>Nombre</label>
 <input type="text" class="form-control" id="nombre">
 
 </div>
 
 <div class="mb-3">
 
-<label class="form-label">Correo Electrónico</label>
+<label>Correo Electrónico</label>
 <input type="email" class="form-control" id="correo">
 
 </div>
 
 <div class="mb-3">
 
-<label class="form-label">Número de Teléfono</label>
+<label>Número de Teléfono</label>
 <input type="tel" class="form-control" id="telefono">
 
 </div>
 
 <div class="mb-3">
 
-<label class="form-label">Mensaje</label>
+<label>Mensaje</label>
 <textarea class="form-control" id="mensaje" rows="4"></textarea>
 
 </div>
@@ -121,14 +115,9 @@ siguiente formulario.
 <p>© 2026 - DANIELA JUDITH VILLALBA DE HOYOS</p>
 </footer>
 
-
-<a href="https://wa.me/573147103816?text=Hola%20Daniela%2C%20vi%20tu%20hoja%20de%20vida%20y%20quiero%20más%20información"
-class="whatsapp" target="_blank">
-
+<a href="https://wa.me/573147103816" class="whatsapp" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
-
 </a>
-
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -138,10 +127,10 @@ $("#formulario").submit(function(e){
 
 e.preventDefault();
 
-let nombre = $("#nombre").val();
-let correo = $("#correo").val();
-let telefono = $("#telefono").val();
-let mensaje = $("#mensaje").val();
+let nombre=$("#nombre").val();
+let correo=$("#correo").val();
+let telefono=$("#telefono").val();
+let mensaje=$("#mensaje").val();
 
 if(nombre=="" || correo=="" || telefono=="" || mensaje==""){
 
